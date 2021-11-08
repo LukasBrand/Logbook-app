@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/tripListFragment">
+
+    <fragment
+        android:id="@+id/tripListFragment"
+        android:name="de.lukasbrand.logbook.trip.TripListFragment"
+        android:label="trip_list_fragment"
+        tools:layout="@layout/trip_list_fragment" >
+        <action
+            android:id="@+id/action_tripListFragment_to_tripFragment"
+            app:destination="@id/tripFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripFragment"
+        android:name="de.lukasbrand.logbook.trip.TripFragment"
+        android:label="trip_fragment">
+        <action
+            android:id="@+id/action_tripFragment_to_tripListFragment"
+            app:destination="@id/tripListFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fahrtenbuch</string>
+    <string name="add_trip">Neue Fahrt hinzufügen</string>
+    <string name="export_trips">Fahrten exportieren</string>
+</resources>
