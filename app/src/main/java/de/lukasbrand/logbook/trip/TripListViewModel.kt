@@ -4,5 +4,5 @@ import androidx.lifecycle.ViewModel
 
 class TripListViewModel : ViewModel() {
 
-    var trips : MutableList<Trip> = mutableListOf()
+    val trips : MutableList<Trip> = mutableListOf()
 }

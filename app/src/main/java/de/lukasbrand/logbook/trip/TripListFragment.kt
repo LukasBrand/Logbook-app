@@ -30,7 +30,6 @@ class TripListFragment : Fragment() {
         )
 
         binding.exportButton.visibility = View.INVISIBLE
-
         binding.exportButton.setOnClickListener {
 
         }
